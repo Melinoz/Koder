@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Viktors Kalkylator</title>
+    </head>
+    <body>
+        <p>Viktors Kalkylator</p>
+        <input id = "number1" type="number">
+        <input id = "number2" type = "number">
+        <button onclick = "mcalc()">Multiplicera</button>
+        <button onclick = "dcalc()">Dividera</button>
+        <script>
+
+            function mcalc(){
+                var a = document.getElementById("number1")
+                var b = document.getElementById("number2")
+                alert(
+                    multiply(a.value, b.value)
+                ) 
+            
+            }
+            function dcalc(){
+                var a = document.getElementById("number1")
+                var b = document.getElementById("number2")
+                alert(
+                    divide(a.value, b.value)
+                ) 
+            
+            }
+
+            function multiply(num1,num2){
+                return num1 * num2;
+            }
+           
+            function divide(num1,num2){
+                return num1 / num2;
+            }
+            /*var a = prompt("num 1"); 
+            var b = prompt("num 2");
+            var setting = prompt("multiply or divide)");
+           
+            if (setting == "multiply"){ 
+                alert(
+                multiply(a, b))} 
+           
+            
+           if (setting == "divide"){
+               alert(
+                   divide(a , b)
+               )} 
+            /* var a = Number(a);
+            var b = Number(b);
+            var results = a * b;
+            alert (results)
+        
+        
+            var a = prompt("num 1"); 
+            var b = prompt("num 2");
+            var a = Number(a);
+            var b = Number(b);
+            var results = a - b;
+            alert (results) */
+            </script>
+        
+    
+
+    </body>
+</html> 
